@@ -1,6 +1,6 @@
 $lobster: 'Lobster', cursive;
 $bebas: BebasNeue;
-$mint: #3CC3B5;
+$mint: #4ccfc1;
 $grey: #A1a1A1;
 .BebasNeue { 
 	font-family: BebasNeue;
@@ -24,14 +24,28 @@ html {
 	font: 4.9rem $lobster;
 	margin-right: 20px;
 	padding: 0;
+
 }
-.navbar-right {
+.navbar-default .navbar-brand {
+	color: $mint;
+}
+.navbar-nav {
 	font: 2.1rem $bebas;
 	background-color: $mint;
-	margin-top: 20px;
+	margin-top: 13px;
+		a {
+			height: 30px;
+		}
+}
+.navbar-nav>li>a {
+	line-height: 0;
+}
+.navbar-nav li:not(:last-child){
+	border-left: 2px solid white;
 }
 .form-control {
-margin-top: 10px;
+	margin-top: 0;
+	margin-bottom: 10px;
 }
 .basket-icon {
 	background-image: url("../img/basket.png");
@@ -51,6 +65,7 @@ margin-top: 10px;
 }
 .menu-bg {
 	background-color: $mint;
+	margin-top: 30px;
 }
 .navbar-default .navbar-nav>li>a {
 	color: white;
