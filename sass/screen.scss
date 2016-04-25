@@ -2,6 +2,7 @@ $lobster: 'Lobster', cursive;
 $bebas: BebasNeue;
 $mint: #4ccfc1;
 $grey: #A1a1A1;
+$open: 'Open Sans', sans-serif;
 .BebasNeue { 
 	font-family: BebasNeue;
 	font-weight: normal;
@@ -70,6 +71,36 @@ html {
 .navbar-default .navbar-nav>li>a {
 	color: white;
 }
+.slider {
+	background: url('../img/bg-slider.png') repeat;
+	margin-top: -20px;
+	padding: 87px 0 20px 0;
+	p {
+		font: 1.7rem $open;
+		color: white;
+		width: 80%;
+		line-height: 2.8rem;
+	}
+
+}
+.sld-h2 {
+	font: 6.1rem $bebas;
+	color: white;
+}
+.btn-white {
+	background-color: transparent;
+	border: 3px solid white;
+	padding: 10px 22px;
+	border-radius: 10px;
+	color: white;
+	font: 2.7rem $bebas;
+	transition: 0.3s ease;
+	&:hover {
+		background-color: white;
+		color: $mint;
+	}
+}
+
 @media (max-width: 968px){
 .form-control {
 margin-left: 10px;
