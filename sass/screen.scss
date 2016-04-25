@@ -1,10 +1,81 @@
+$lobster: 'Lobster', cursive;
+$bebas: BebasNeue;
+$mint: #3CC3B5;
+$grey: #A1a1A1;
+.BebasNeue { 
+	font-family: BebasNeue;
+	font-weight: normal;
+	font-style: normal;
+}
+
 html {
 	font-size: 62.5%;
 }
+
 .navbar-default {
 	background-image: none;
 	background-color: #FFF;
 	border: 0;
 	-webkit-box-shadow: none;
 	box-shadow: none;
+	padding-top: 20px;
+}
+.navbar-brand {
+	font: 4.9rem $lobster;
+	margin-right: 20px;
+	padding: 0;
+}
+.navbar-right {
+	font: 2.1rem $bebas;
+	background-color: $mint;
+	margin-top: 20px;
+}
+.form-control {
+margin-top: 10px;
+}
+.basket-icon {
+	background-image: url("../img/basket.png");
+	width: 41px;
+	height: 37px;
+	float: right;
+	display: inline;
+}
+.price {
+	display: inline;
+	float: right;
+	font: 3.3rem $bebas;
+	color: $grey;
+}
+.navbar-toggle {
+	margin-top: 0px;
+}
+.menu-bg {
+	background-color: $mint;
+}
+.navbar-default .navbar-nav>li>a {
+	color: white;
+}
+@media (max-width: 968px){
+.form-control {
+margin-left: 10px;
+width: 40%;
+
+}
+.basket-icon {
+	background-image: url("../img/basket.png");
+	width: 41px;
+	height: 37px;
+	margin-right: 75px;
+	margin-top: -50px;
+	float: right;
+	display: inline;
+}
+.price {
+	display: inline;
+	float: right;
+	font: 3.3rem $bebas;
+	color: $grey;
+	margin-right: 130px;
+	margin-top: -50px;
+}
 }

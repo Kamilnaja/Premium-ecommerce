@@ -1,13 +1,101 @@
-/* line 1, ../sass/screen.scss */
+/* line 5, ../sass/screen.scss */
+.BebasNeue {
+  font-family: BebasNeue;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 11, ../sass/screen.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 4, ../sass/screen.scss */
+/* line 15, ../sass/screen.scss */
 .navbar-default {
   background-image: none;
   background-color: #FFF;
   border: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
+  padding-top: 20px;
+}
+
+/* line 23, ../sass/screen.scss */
+.navbar-brand {
+  font: 4.9rem "Lobster", cursive;
+  margin-right: 20px;
+  padding: 0;
+}
+
+/* line 28, ../sass/screen.scss */
+.navbar-right {
+  font: 2.1rem BebasNeue;
+  background-color: #3CC3B5;
+  margin-top: 20px;
+}
+
+/* line 33, ../sass/screen.scss */
+.form-control {
+  margin-top: 10px;
+}
+
+/* line 36, ../sass/screen.scss */
+.basket-icon {
+  background-image: url("../img/basket.png");
+  width: 41px;
+  height: 37px;
+  float: right;
+  display: inline;
+}
+
+/* line 43, ../sass/screen.scss */
+.price {
+  display: inline;
+  float: right;
+  font: 3.3rem BebasNeue;
+  color: #A1a1A1;
+}
+
+/* line 49, ../sass/screen.scss */
+.navbar-toggle {
+  margin-top: 0px;
+}
+
+/* line 52, ../sass/screen.scss */
+.menu-bg {
+  background-color: #3CC3B5;
+}
+
+/* line 55, ../sass/screen.scss */
+.navbar-default .navbar-nav > li > a {
+  color: white;
+}
+
+@media (max-width: 968px) {
+  /* line 59, ../sass/screen.scss */
+  .form-control {
+    margin-left: 10px;
+    width: 40%;
+  }
+
+  /* line 64, ../sass/screen.scss */
+  .basket-icon {
+    background-image: url("../img/basket.png");
+    width: 41px;
+    height: 37px;
+    margin-right: 75px;
+    margin-top: -50px;
+    float: right;
+    display: inline;
+  }
+
+  /* line 73, ../sass/screen.scss */
+  .price {
+    display: inline;
+    float: right;
+    font: 3.3rem BebasNeue;
+    color: #A1a1A1;
+    margin-right: 130px;
+    margin-top: -50px;
+  }
 }
