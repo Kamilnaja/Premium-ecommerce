@@ -1,0 +1,13 @@
+/* line 1, ../sass/screen.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 4, ../sass/screen.scss */
+.navbar-default {
+  background-image: none;
+  background-color: #FFF;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
