@@ -85,20 +85,22 @@ html {
 .menu-bg {
   background-color: #4ccfc1;
   margin-top: 30px;
+  width: 100%;
+  padding: 0 calc(50% - 600px);
 }
 
-/* line 71, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
 .navbar-default .navbar-nav > li > a {
   color: white;
 }
 
-/* line 74, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 .slider {
   background: url("../img/bg-slider.png") repeat;
   margin-top: -20px;
   padding: 87px 0 20px 0;
 }
-/* line 78, ../sass/screen.scss */
+/* line 80, ../sass/screen.scss */
 .slider p {
   font: 1.7rem "Open Sans", sans-serif;
   color: white;
@@ -106,13 +108,13 @@ html {
   line-height: 2.8rem;
 }
 
-/* line 86, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 .sld-h2 {
   font: 6.1rem BebasNeue;
   color: white;
 }
 
-/* line 90, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 .btn-white {
   background-color: transparent;
   border: 3px solid white;
@@ -122,20 +124,20 @@ html {
   font: 2.7rem BebasNeue;
   transition: 0.3s ease;
 }
-/* line 98, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 .btn-white:hover {
   background-color: white;
   color: #4ccfc1;
 }
 
 @media (max-width: 968px) {
-  /* line 105, ../sass/screen.scss */
+  /* line 107, ../sass/screen.scss */
   .form-control {
     margin-left: 10px;
     width: 40%;
   }
 
-  /* line 110, ../sass/screen.scss */
+  /* line 112, ../sass/screen.scss */
   .basket-icon {
     background-image: url("../img/basket.png");
     width: 41px;
@@ -146,7 +148,7 @@ html {
     display: inline;
   }
 
-  /* line 119, ../sass/screen.scss */
+  /* line 121, ../sass/screen.scss */
   .price {
     display: inline;
     float: right;
