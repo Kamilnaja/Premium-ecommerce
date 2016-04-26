@@ -76,14 +76,16 @@ html {
 .slider {
 	background: url('../img/bg-slider.png') repeat;
 	margin-top: -20px;
-	padding: 87px 0 20px 0;
+	width: 100%;
+	padding: 0 calc(50% - 700px);
+	padding-top: 80px;
+	padding-bottom: 100px;
 	p {
 		font: 1.7rem $open;
 		color: white;
 		width: 80%;
 		line-height: 2.8rem;
 	}
-
 }
 .sld-h2 {
 	font: 6.1rem $bebas;
@@ -102,7 +104,69 @@ html {
 		color: $mint;
 	}
 }
+.btn-shop {
+	background-color: $mint;
+	color: white;
+	padding: 10px 22px;
+	border-radius: 10px;
+	border: 0 solid $mint;
+	font: 2.7rem $bebas;
+	height: 46px;
+	float: right;
+	margin-top: 94px;
+	margin-right: -113px;
 
+}
+.small-slider {
+	height: 200px;
+	width: 100%;
+	padding: 0 calc(50% - 600px);
+	
+	
+}
+	.grey-h2 {
+			font-family: $bebas;
+			color: $grey;
+			font-size: 2.7rem;
+			float: right;
+			margin-left: 33px;
+			margin-top: 50px;
+		}
+.bg-img1 {
+background: url('../img/trauses.jpg') no-repeat left bottom ;
+height: 190px;
+}
+.bg-img2 {
+background: url('../img/shoes.jpg') no-repeat left bottom;
+height: 190px;
+}
+.bg-img3 {
+	background: url('../img/t-shirt.jpg') no-repeat left bottom;
+	height: 190px;
+}
+.strap {
+	height: 70px;
+	background: url('../img/bg-slider.png') repeat;
+	width: 100%;
+	padding: 2rem calc(50% - 600px);
+	font: 3.1rem $bebas;
+	color: white;
+}
+.articles-gallery {
+	padding: 5rem calc(50% - 900/2px);
+
+
+}
+.grey-h2 > *{
+	height: 300px;
+	border-bottom: 4px solid $mint;
+	border: 1px solid black;
+	margin-top: 30px;
+	margin-left: 15px;
+	margin-right: 15px;
+
+}
+/* ----------------------------------------------*/
 @media (max-width: 968px){
 .form-control {
 margin-left: 10px;
@@ -125,5 +189,12 @@ width: 40%;
 	color: $grey;
 	margin-right: 130px;
 	margin-top: -50px;
+}
+.slider {
+	padding: 50px calc(50% - 300px);
+}
+.slider h2 {
+	text-align: center;
+
 }
 }
