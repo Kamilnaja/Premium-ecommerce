@@ -3,6 +3,8 @@ $bebas: BebasNeue;
 $mint: #4ccfc1;
 $grey: #A1a1A1;
 $open: 'Open Sans', sans-serif;
+$green: #3cc395;
+$darkmint: #2da89b;
 .BebasNeue { 
 	font-family: BebasNeue;
 	font-weight: normal;
@@ -109,40 +111,59 @@ html {
 	color: white;
 	padding: 10px 22px;
 	border-radius: 10px;
-	border: 0 solid $mint;
+	border: 2px solid $mint;
 	font: 2.7rem $bebas;
-	height: 46px;
-	float: right;
-	margin-top: 94px;
-	margin-right: -113px;
+	position: absolute;
+	transition: 0.3s ease;
+		&:hover {
+			background-color: white;
+			color: $mint;
+
+		}
 
 }
 .small-slider {
-	height: 200px;
+
 	width: 100%;
-	padding: 0 calc(50% - 600px);
-	
-	
+
+
+}
+.small-slider .container > * {
+
+
 }
 	.grey-h2 {
 			font-family: $bebas;
 			color: $grey;
 			font-size: 2.7rem;
-			float: right;
-			margin-left: 33px;
-			margin-top: 50px;
+			position: absolute;
 		}
 .bg-img1 {
-background: url('../img/trauses.jpg') no-repeat left bottom ;
+background: url('../img/trauses.jpg') no-repeat 10% 70% ;
 height: 190px;
 }
 .bg-img2 {
-background: url('../img/shoes.jpg') no-repeat left bottom;
+background: url('../img/shoes.jpg') no-repeat 10% 70% ;
 height: 190px;
 }
 .bg-img3 {
-	background: url('../img/t-shirt.jpg') no-repeat left bottom;
+	background: url('../img/t-shirt.jpg') no-repeat 10% 70% ;
 	height: 190px;
+}
+.sm-sld-img > *{
+	border-left: 1px solid grey;
+	border-right: 1px solid grey;
+	position: relative;
+		button {
+			position: absolute;
+			bottom: 42px;
+			right: 82px;
+		}
+		h2 {
+			position: absolute;
+			bottom: 94px;
+			right: 82px;
+		}
 }
 .strap {
 	height: 70px;
@@ -152,19 +173,77 @@ height: 190px;
 	font: 3.1rem $bebas;
 	color: white;
 }
-.articles-gallery {
-	padding: 5rem calc(50% - 900/2px);
 
+.gl-img {
+	height: 300px;
+	border: 1px solid lightgrey;
+	border-bottom: 4px solid $green;
+	max-width: 300px;
+	margin: 20px;
+	position: relative;
+	-webkit-box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.75);
+			box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.75);
+		h2 {
+			@extend .grey-h2;
+			bottom: 100px;
+			left: 77px;
+		}
+		h3 {
+			@extend .grey-h2;
+			bottom: 40px;
+			left: 50px;
+		}
+}
+.ft-1 {
+	background: url('../img/trau.jpg') 50% 15% no-repeat;
 
 }
-.grey-h2 > *{
-	height: 300px;
-	border-bottom: 4px solid $mint;
-	border: 1px solid black;
-	margin-top: 30px;
-	margin-left: 15px;
-	margin-right: 15px;
+.ft-2 {
+	background: url('../img/torba.jpg') 50% 15% no-repeat;
+}
+.ft-3 {
+	background: url('../img/mata.jpg') 50% 15% no-repeat;
+}
+.ft-4 {
+	background: url('../img/koszulka2.jpg') 50% 15% no-repeat;
+}
+.ft-5 {
+	background: url('../img/but.jpg') 50% 15% no-repeat;
+}
+.ft-6 {
+	background: url('../img/koszula.jpg') 50% 15% no-repeat;
+}
+.btn-gal {
+	@extend .btn-shop;
+		position: absolute;
+		bottom: 36px;
+		left: 125px;
+}
+.main-footer {
+	background-color: $mint;
+		h2 {
+			margin: 43px;
+			padding: 0;
+			font: 2.7rem $bebas;
+			color: white;
+		}
+		ul {
+			list-style-type: none;
+			list-style-position: inside;
+			font: 1.5rem $open;
+			color: white;
+			line-height: 2.8rem;
 
+		}
+}
+.footer-copyright {
+	height: 46px;
+	background-color: $darkmint;
+	font: 1.5rem $open;
+	color: white;
+	padding-top: 20px;
+	text-align: center;
 }
 /* ----------------------------------------------*/
 @media (max-width: 968px){
@@ -182,6 +261,10 @@ width: 40%;
 	float: right;
 	display: inline;
 }
+.small-slider {
+	
+	width: 300px;
+}
 .price {
 	display: inline;
 	float: right;
@@ -190,11 +273,9 @@ width: 40%;
 	margin-right: 130px;
 	margin-top: -50px;
 }
-.slider {
-	padding: 50px calc(50% - 300px);
-}
-.slider h2 {
-	text-align: center;
 
+
+.gl-img {
+		margin: 10px auto;
 }
 }
