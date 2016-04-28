@@ -1,3 +1,4 @@
+
 $lobster: 'Lobster', cursive;
 $bebas: BebasNeue;
 $mint: #4ccfc1;
@@ -21,12 +22,14 @@ html {
 	border: 0;
 	-webkit-box-shadow: none;
 	box-shadow: none;
-	padding-top: 20px;
+	padding-top: 40px;
 }
 .navbar-brand {
 	font: 4.9rem $lobster;
 	margin-right: 20px;
 	padding: 0;
+	display: inline;
+	margin-top: 0;
 
 }
 .navbar-default .navbar-brand {
@@ -46,9 +49,12 @@ html {
 .navbar-nav li:not(:last-child){
 	border-left: 2px solid white;
 }
-.form-control {
-	margin-top: 0;
-	margin-bottom: 10px;
+.form-ctrl {
+width: 30%;
+margin-left: 100px;
+margin-top: 20px;
+display: inline;
+float: left;
 }
 .basket-icon {
 	background-image: url("../img/basket.png");
@@ -57,6 +63,7 @@ html {
 	float: right;
 	display: inline;
 }
+
 .price {
 	display: inline;
 	float: right;
@@ -71,6 +78,7 @@ html {
 	margin-top: 30px;
 	width: 100%;
 	padding: 0 calc(50% - 600px);
+	padding-bottom: 10px;
 }
 .navbar-default .navbar-nav>li>a {
 	color: white;
@@ -118,41 +126,67 @@ html {
 		&:hover {
 			background-color: white;
 			color: $mint;
-
 		}
-
 }
 .small-slider {
-
 	width: 100%;
-
-
+	position: relative;
 }
-.small-slider .container > * {
+.chevron-left {
+	position: absolute;
+	top: 43%;
+	left: 0;
+	width: 20px;
+	height: 100px;
+	cursor: pointer;
+	opacity: 0.5;
+	font-size: 30px;
+	transition: 0.3s ease;
+		&:hover, &:focus {
+			opacity: 1;
 
-
+		}
 }
-	.grey-h2 {
-			font-family: $bebas;
-			color: $grey;
-			font-size: 2.7rem;
-			position: absolute;
+.chevron-right {
+	position: absolute;
+	top: 43%;
+	right: 10px;
+	width: 20px;
+	height: 100px;
+	cursor: pointer;
+	opacity: 0.5;
+	font-size: 30px;
+	transition: 0.3s ease;
+		&:hover, &:focus {
+			opacity: 1;
+
+		}
+}
+
+.grey-h2 {
+	font-family: $bebas;
+	color: $grey;
+	font-size: 2.7rem;
+	position: absolute;
 		}
 .bg-img1 {
-background: url('../img/trauses.jpg') no-repeat 10% 70% ;
-height: 190px;
+	background: url('../img/trauses.jpg') no-repeat 10% 70% ;
+	height: 190px;
 }
 .bg-img2 {
-background: url('../img/shoes.jpg') no-repeat 10% 70% ;
-height: 190px;
+	background: url('../img/shoes.jpg') no-repeat 10% 70% ;
+	height: 190px;
 }
 .bg-img3 {
 	background: url('../img/t-shirt.jpg') no-repeat 10% 70% ;
 	height: 190px;
 }
+.sm-sld-img div:nth-child(2) {
+	border-left: 1px solid lightgrey;
+	border-right: 1px solid lightgrey;
+}
 .sm-sld-img > *{
-	border-left: 1px solid grey;
-	border-right: 1px solid grey;
+	
 	position: relative;
 		button {
 			position: absolute;
@@ -164,6 +198,9 @@ height: 190px;
 			bottom: 94px;
 			right: 82px;
 		}
+}
+.sm-sld-img {
+	position: relative;
 }
 .strap {
 	height: 70px;
@@ -197,7 +234,6 @@ height: 190px;
 }
 .ft-1 {
 	background: url('../img/trau.jpg') 50% 15% no-repeat;
-
 }
 .ft-2 {
 	background: url('../img/torba.jpg') 50% 15% no-repeat;
@@ -216,12 +252,17 @@ height: 190px;
 }
 .btn-gal {
 	@extend .btn-shop;
-		position: absolute;
-		bottom: 36px;
-		left: 125px;
+	position: absolute;
+	bottom: 36px;
+	left: 125px;
 }
 .main-footer {
 	background-color: $mint;
+
+	a {
+		color: white;
+		text-decoration: none;
+	}
 		h2 {
 			margin: 43px;
 			padding: 0;
@@ -247,35 +288,30 @@ height: 190px;
 }
 /* ----------------------------------------------*/
 @media (max-width: 968px){
-.form-control {
-margin-left: 10px;
-width: 40%;
-
-}
-.basket-icon {
-	background-image: url("../img/basket.png");
-	width: 41px;
-	height: 37px;
-	margin-right: 75px;
-	margin-top: -50px;
-	float: right;
-	display: inline;
-}
-.small-slider {
 	
-	width: 300px;
+button.navbar-toggle {
+	margin-top: 10px;
+}
+.basket-price {
+	margin-top: -38px;
+	margin-right: 61px;
 }
 .price {
 	display: inline;
 	float: right;
 	font: 3.3rem $bebas;
 	color: $grey;
-	margin-right: 130px;
-	margin-top: -50px;
+
 }
-
-
 .gl-img {
-		margin: 10px auto;
+		margin: 20px auto;
+}
+.form-ctrl {
+	width: 40%;
+	margin-left: 0px;
+	margin-top: 20px;
+}
+.navbar-brand {
+margin-left: 17px;
 }
 }

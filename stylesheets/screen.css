@@ -1,65 +1,70 @@
-/* line 8, ../sass/screen.scss */
+/* line 9, ../sass/screen.scss */
 .BebasNeue {
   font-family: BebasNeue;
   font-weight: normal;
   font-style: normal;
 }
 
-/* line 14, ../sass/screen.scss */
+/* line 15, ../sass/screen.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 18, ../sass/screen.scss */
+/* line 19, ../sass/screen.scss */
 .navbar-default {
   background-image: none;
   background-color: #FFF;
   border: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
-  padding-top: 20px;
+  padding-top: 40px;
 }
 
-/* line 26, ../sass/screen.scss */
+/* line 27, ../sass/screen.scss */
 .navbar-brand {
   font: 4.9rem "Lobster", cursive;
   margin-right: 20px;
   padding: 0;
+  display: inline;
+  margin-top: 0;
 }
 
-/* line 32, ../sass/screen.scss */
+/* line 35, ../sass/screen.scss */
 .navbar-default .navbar-brand {
   color: #4ccfc1;
 }
 
-/* line 35, ../sass/screen.scss */
+/* line 38, ../sass/screen.scss */
 .navbar-nav {
   font: 2.1rem BebasNeue;
   background-color: #4ccfc1;
   margin-top: 13px;
 }
-/* line 39, ../sass/screen.scss */
+/* line 42, ../sass/screen.scss */
 .navbar-nav a {
   height: 30px;
 }
 
-/* line 43, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 .navbar-nav > li > a {
   line-height: 0;
 }
 
-/* line 46, ../sass/screen.scss */
+/* line 49, ../sass/screen.scss */
 .navbar-nav li:not(:last-child) {
   border-left: 2px solid white;
 }
 
-/* line 49, ../sass/screen.scss */
-.form-control {
-  margin-top: 0;
-  margin-bottom: 10px;
+/* line 52, ../sass/screen.scss */
+.form-ctrl {
+  width: 30%;
+  margin-left: 100px;
+  margin-top: 20px;
+  display: inline;
+  float: left;
 }
 
-/* line 53, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 .basket-icon {
   background-image: url("../img/basket.png");
   width: 41px;
@@ -68,7 +73,7 @@ html {
   display: inline;
 }
 
-/* line 60, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 .price {
   display: inline;
   float: right;
@@ -76,25 +81,26 @@ html {
   color: #A1a1A1;
 }
 
-/* line 66, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
 .navbar-toggle {
   margin-top: 0px;
 }
 
-/* line 69, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 .menu-bg {
   background-color: #4ccfc1;
   margin-top: 30px;
   width: 100%;
   padding: 0 calc(50% - 600px);
+  padding-bottom: 10px;
 }
 
-/* line 75, ../sass/screen.scss */
+/* line 83, ../sass/screen.scss */
 .navbar-default .navbar-nav > li > a {
   color: white;
 }
 
-/* line 78, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 .slider {
   background: url("../img/bg-slider.png") repeat;
   margin-top: -20px;
@@ -103,7 +109,7 @@ html {
   padding-top: 80px;
   padding-bottom: 100px;
 }
-/* line 85, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
 .slider p {
   font: 1.7rem "Open Sans", sans-serif;
   color: white;
@@ -111,13 +117,13 @@ html {
   line-height: 2.8rem;
 }
 
-/* line 92, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 .sld-h2 {
   font: 6.1rem BebasNeue;
   color: white;
 }
 
-/* line 96, ../sass/screen.scss */
+/* line 104, ../sass/screen.scss */
 .btn-white {
   background-color: transparent;
   border: 3px solid white;
@@ -127,13 +133,13 @@ html {
   font: 2.7rem BebasNeue;
   transition: 0.3s ease;
 }
-/* line 104, ../sass/screen.scss */
+/* line 112, ../sass/screen.scss */
 .btn-white:hover {
   background-color: white;
   color: #4ccfc1;
 }
 
-/* line 109, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 .btn-shop, .btn-gal {
   background-color: #4ccfc1;
   color: white;
@@ -144,18 +150,53 @@ html {
   position: absolute;
   transition: 0.3s ease;
 }
-/* line 118, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 .btn-shop:hover, .btn-gal:hover {
   background-color: white;
   color: #4ccfc1;
 }
 
-/* line 125, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 .small-slider {
   width: 100%;
+  position: relative;
 }
 
 /* line 135, ../sass/screen.scss */
+.chevron-left {
+  position: absolute;
+  top: 43%;
+  left: 0;
+  width: 20px;
+  height: 100px;
+  cursor: pointer;
+  opacity: 0.5;
+  font-size: 30px;
+  transition: 0.3s ease;
+}
+/* line 145, ../sass/screen.scss */
+.chevron-left:hover, .chevron-left:focus {
+  opacity: 1;
+}
+
+/* line 150, ../sass/screen.scss */
+.chevron-right {
+  position: absolute;
+  top: 43%;
+  right: 10px;
+  width: 20px;
+  height: 100px;
+  cursor: pointer;
+  opacity: 0.5;
+  font-size: 30px;
+  transition: 0.3s ease;
+}
+/* line 160, ../sass/screen.scss */
+.chevron-right:hover, .chevron-right:focus {
+  opacity: 1;
+}
+
+/* line 166, ../sass/screen.scss */
 .grey-h2, .gl-img h2, .gl-img h3 {
   font-family: BebasNeue;
   color: #A1a1A1;
@@ -163,44 +204,53 @@ html {
   position: absolute;
 }
 
-/* line 141, ../sass/screen.scss */
+/* line 172, ../sass/screen.scss */
 .bg-img1 {
   background: url("../img/trauses.jpg") no-repeat 10% 70%;
   height: 190px;
 }
 
-/* line 145, ../sass/screen.scss */
+/* line 176, ../sass/screen.scss */
 .bg-img2 {
   background: url("../img/shoes.jpg") no-repeat 10% 70%;
   height: 190px;
 }
 
-/* line 149, ../sass/screen.scss */
+/* line 180, ../sass/screen.scss */
 .bg-img3 {
   background: url("../img/t-shirt.jpg") no-repeat 10% 70%;
   height: 190px;
 }
 
-/* line 153, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
+.sm-sld-img div:nth-child(2) {
+  border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+}
+
+/* line 188, ../sass/screen.scss */
 .sm-sld-img > * {
-  border-left: 1px solid grey;
-  border-right: 1px solid grey;
   position: relative;
 }
-/* line 157, ../sass/screen.scss */
+/* line 191, ../sass/screen.scss */
 .sm-sld-img > * button {
   position: absolute;
   bottom: 42px;
   right: 82px;
 }
-/* line 162, ../sass/screen.scss */
+/* line 196, ../sass/screen.scss */
 .sm-sld-img > * h2 {
   position: absolute;
   bottom: 94px;
   right: 82px;
 }
 
-/* line 168, ../sass/screen.scss */
+/* line 202, ../sass/screen.scss */
+.sm-sld-img {
+  position: relative;
+}
+
+/* line 205, ../sass/screen.scss */
 .strap {
   height: 70px;
   background: url("../img/bg-slider.png") repeat;
@@ -210,7 +260,7 @@ html {
   color: white;
 }
 
-/* line 177, ../sass/screen.scss */
+/* line 214, ../sass/screen.scss */
 .gl-img {
   height: 300px;
   border: 1px solid lightgrey;
@@ -222,66 +272,71 @@ html {
   -moz-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.75);
 }
-/* line 187, ../sass/screen.scss */
+/* line 224, ../sass/screen.scss */
 .gl-img h2 {
   bottom: 100px;
   left: 77px;
 }
-/* line 192, ../sass/screen.scss */
+/* line 229, ../sass/screen.scss */
 .gl-img h3 {
   bottom: 40px;
   left: 50px;
 }
 
-/* line 198, ../sass/screen.scss */
+/* line 235, ../sass/screen.scss */
 .ft-1 {
   background: url("../img/trau.jpg") 50% 15% no-repeat;
 }
 
-/* line 202, ../sass/screen.scss */
+/* line 238, ../sass/screen.scss */
 .ft-2 {
   background: url("../img/torba.jpg") 50% 15% no-repeat;
 }
 
-/* line 205, ../sass/screen.scss */
+/* line 241, ../sass/screen.scss */
 .ft-3 {
   background: url("../img/mata.jpg") 50% 15% no-repeat;
 }
 
-/* line 208, ../sass/screen.scss */
+/* line 244, ../sass/screen.scss */
 .ft-4 {
   background: url("../img/koszulka2.jpg") 50% 15% no-repeat;
 }
 
-/* line 211, ../sass/screen.scss */
+/* line 247, ../sass/screen.scss */
 .ft-5 {
   background: url("../img/but.jpg") 50% 15% no-repeat;
 }
 
-/* line 214, ../sass/screen.scss */
+/* line 250, ../sass/screen.scss */
 .ft-6 {
   background: url("../img/koszula.jpg") 50% 15% no-repeat;
 }
 
-/* line 217, ../sass/screen.scss */
+/* line 253, ../sass/screen.scss */
 .btn-gal {
   position: absolute;
   bottom: 36px;
   left: 125px;
 }
 
-/* line 223, ../sass/screen.scss */
+/* line 259, ../sass/screen.scss */
 .main-footer {
   background-color: #4ccfc1;
 }
-/* line 225, ../sass/screen.scss */
+/* line 262, ../sass/screen.scss */
+.main-footer a {
+  color: white;
+  text-decoration: none;
+}
+/* line 266, ../sass/screen.scss */
 .main-footer h2 {
   margin: 43px;
   padding: 0;
   font: 2.7rem BebasNeue;
   color: white;
 }
-/* line 231, ../sass/screen.scss */
+/* line 272, ../sass/screen.scss */
 .main-footer ul {
   list-style-type: none;
   list-style-position: inside;
@@ -290,7 +345,7 @@ html {
   line-height: 2.8rem;
 }
 
-/* line 240, ../sass/screen.scss */
+/* line 281, ../sass/screen.scss */
 .footer-copyright {
   height: 46px;
   background-color: #2da89b;
@@ -302,40 +357,39 @@ html {
 
 /* ----------------------------------------------*/
 @media (max-width: 968px) {
-  /* line 250, ../sass/screen.scss */
-  .form-control {
-    margin-left: 10px;
-    width: 40%;
+  /* line 292, ../sass/screen.scss */
+  button.navbar-toggle {
+    margin-top: 10px;
   }
 
-  /* line 255, ../sass/screen.scss */
-  .basket-icon {
-    background-image: url("../img/basket.png");
-    width: 41px;
-    height: 37px;
-    margin-right: 75px;
-    margin-top: -50px;
-    float: right;
-    display: inline;
+  /* line 295, ../sass/screen.scss */
+  .basket-price {
+    margin-top: -38px;
+    margin-right: 61px;
   }
 
-  /* line 264, ../sass/screen.scss */
-  .small-slider {
-    width: 300px;
-  }
-
-  /* line 268, ../sass/screen.scss */
+  /* line 299, ../sass/screen.scss */
   .price {
     display: inline;
     float: right;
     font: 3.3rem BebasNeue;
     color: #A1a1A1;
-    margin-right: 130px;
-    margin-top: -50px;
   }
 
-  /* line 278, ../sass/screen.scss */
+  /* line 306, ../sass/screen.scss */
   .gl-img {
-    margin: 10px auto;
+    margin: 20px auto;
+  }
+
+  /* line 309, ../sass/screen.scss */
+  .form-ctrl {
+    width: 40%;
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+
+  /* line 314, ../sass/screen.scss */
+  .navbar-brand {
+    margin-left: 17px;
   }
 }
