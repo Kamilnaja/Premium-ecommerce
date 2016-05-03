@@ -15,7 +15,13 @@ $darkmint: #2da89b;
 html {
 	font-size: 62.5%;
 }
+.item > .row > div {
+	margin: 0 auto;
 
+}
+.item > .row {
+	margin-left: 80px;
+}
 .navbar-default {
 	background-image: none;
 	background-color: #FFF;
@@ -50,11 +56,11 @@ html {
 	border-left: 2px solid white;
 }
 .form-ctrl {
-width: 30%;
-margin-left: 100px;
-margin-top: 20px;
-display: inline;
-float: left;
+	width: 30%;
+	margin-left: 100px;
+	margin-top: 20px;
+	display: inline;
+	float: left;
 }
 .basket-icon {
 	background-image: url("../img/basket.png");
@@ -122,6 +128,8 @@ float: left;
 	border: 2px solid $mint;
 	font: 2.7rem $bebas;
 	position: absolute;
+	bottom: 20px;
+	right: 100px;
 	transition: 0.3s ease;
 		&:hover {
 			background-color: white;
@@ -132,54 +140,31 @@ float: left;
 	width: 100%;
 	position: relative;
 }
-.chevron-left {
-	position: absolute;
-	top: 43%;
-	left: 0;
-	width: 20px;
-	height: 100px;
-	cursor: pointer;
-	opacity: 0.5;
-	font-size: 30px;
-	transition: 0.3s ease;
-		&:hover, &:focus {
-			opacity: 1;
 
-		}
-}
-.chevron-right {
-	position: absolute;
-	top: 43%;
-	right: 10px;
-	width: 20px;
-	height: 100px;
-	cursor: pointer;
-	opacity: 0.5;
-	font-size: 30px;
-	transition: 0.3s ease;
-		&:hover, &:focus {
-			opacity: 1;
 
-		}
-}
 
 .grey-h2 {
 	font-family: $bebas;
 	color: $grey;
 	font-size: 2.7rem;
 	position: absolute;
+	bottom: 70px;
+	right: 100px;
 		}
 .bg-img1 {
 	background: url('../img/trauses.jpg') no-repeat 10% 70% ;
 	height: 190px;
+	float: left;
 }
 .bg-img2 {
 	background: url('../img/shoes.jpg') no-repeat 10% 70% ;
 	height: 190px;
+	float: left;
 }
 .bg-img3 {
 	background: url('../img/t-shirt.jpg') no-repeat 10% 70% ;
 	height: 190px;
+	float: left;
 }
 .sm-sld-img div:nth-child(2) {
 	border-left: 1px solid lightgrey;
@@ -222,14 +207,20 @@ float: left;
 	-moz-box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.75);
 			box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.75);
 		h2 {
-			@extend .grey-h2;
-			bottom: 100px;
-			left: 77px;
+			font-family: $bebas;
+			color: $grey;
+			font-size: 2.7rem;
+			position: absolute;
+			bottom: 70px;
+			right: 100px;
 		}
 		h3 {
-			@extend .grey-h2;
-			bottom: 40px;
-			left: 50px;
+			font-family: $bebas;
+			color: $grey;
+			font-size: 2.7rem;
+			position: absolute;
+			bottom: 70px;
+			right: 100px;
 		}
 }
 .ft-1 {
@@ -251,10 +242,24 @@ float: left;
 	background: url('../img/koszula.jpg') 50% 15% no-repeat;
 }
 .btn-gal {
-	@extend .btn-shop;
+	background-color: $mint;
+	color: white;
+	border-radius: 10px;
+	border: 2px solid $mint;
+	font: 2.7rem $bebas;
 	position: absolute;
-	bottom: 36px;
+	transition: 0.3s ease;
+	bottom: 16px;
 	left: 125px;
+	padding: 10px 15px;
+	&:hover {
+			background-color: white;
+			color: $mint;
+		}
+}
+.price {
+	position: absolute;
+	left: 230px;
 }
 .main-footer {
 	background-color: $mint;
@@ -285,6 +290,16 @@ float: left;
 	color: white;
 	padding-top: 20px;
 	text-align: center;
+}
+.carousel-control.right,
+.carousel-control.left {
+	background-image: none;
+}
+.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+	margin-left: -80px;
+}
+.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+	margin-right: -80px;
 }
 /* ----------------------------------------------*/
 @media (max-width: 968px){
