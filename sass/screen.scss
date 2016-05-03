@@ -250,14 +250,14 @@ html {
 	position: absolute;
 	transition: 0.3s ease;
 	bottom: 16px;
-	left: 125px;
+	left: 100px;
 	padding: 10px 15px;
 	&:hover {
 			background-color: white;
 			color: $mint;
 		}
 }
-.price {
+.price2{
 	position: absolute;
 	left: 230px;
 }
