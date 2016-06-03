@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-	<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<link href="stylesheets/screen.css" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" type="text/css" href="fonts/MyFontsWebfontsKit.css">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -47,7 +47,7 @@
     						<li><a href="#">Contact Us</a></li>
     						
     					</ul>
-    				</div>
+
 		   	</div>
  	    </div>
 		</nav>
@@ -128,36 +128,39 @@
 		</section>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-4 gl-img ft-1">
+		<ul>
+			<li><div class="col-md-4 gl-img ft-1">
 				<h2>Featured shoes</h2>
 					<h3 class="price2">$300</h3>
 					<button class="btn-gal">buy now!</button>
-			</div>
-			<div class="col-md-4 gl-img ft-2">
+			</li></div>
+
+			<li><div class="col-md-4 gl-img ft-2">
 				<h2>Featured shoes</h2>
 					<h3 class="price2">$300</h3>
 					<button class="btn-gal">buy now!</button>
-			</div>
-			<div class="col-md-4 gl-img ft-3">
+			</li></div>
+			<li><div class="col-md-4 gl-img ft-3">
 				<h2>Featured shoes</h2>
 					<h3 class="price2">$300</h3>
 					<button class="btn-gal">buy now!</button>
-			</div>
-			<div class="col-md-4 gl-img ft-4">
+			</li></div>
+			<li><div class="col-md-4 gl-img ft-4">
 				<h2>Featured shoes</h2>
 					<h3 class="price2">$300</h3>
 					<button class="btn-gal">buy now!</button>
-			</div>
-			<div class="col-md-4 gl-img ft-5">
+			</li></div>
+			<li><div class="col-md-4 gl-img ft-5">
 				<h2>Featured shoes</h2>
 					<h3 class="price2">$300</h3>
 					<button class="btn-gal">buy now!</button>
-			</div>
-			<div class="col-md-4 gl-img ft-6">
+			</li></div>
+			<li><div class="col-md-4 gl-img ft-6">
 				<h2>Featured shoes</h2>
 					<h3 class="price2">$300</h3>
 					<button class="btn-gal">buy now!</button>
-			</div>
+			</li></div>
+			</ul>
 		</div>
 	</div>
 </div>
@@ -224,7 +227,18 @@
     
     
 });
+$("button").on("click", function(){
+	 $(this).closest(".col-md-3")
+	.find("img")
+	.clone()
+	.addClass("zoom")
+		.appendTo("body");
+	setTimeout(function(){
+		$(".zoom").remove();
 
+	}, 1000);
+
+});
 	</script>
   </body>
   </html>
